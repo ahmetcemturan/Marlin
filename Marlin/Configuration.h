@@ -128,7 +128,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_MKS_SGEN_L
+  #define MOTHERBOARD BTT SKR V1.4
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
