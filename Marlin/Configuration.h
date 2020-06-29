@@ -132,7 +132,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Hornet Orange"
+#define CUSTOM_MACHINE_NAME "Hornet 3D"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -490,9 +490,10 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Marlin 3D
-#define DEFAULT_Kp 58.99
-#define DEFAULT_Ki 5.90
-#define DEFAULT_Kd 147.39	  
+#define DEFAULT_Kp 10
+#define DEFAULT_Ki 0.5  
+#define DEFAULT_Kd 53 
+	  
   // Ultimaker
   //#define DEFAULT_Kp 22.2
   //#define DEFAULT_Ki 1.08
@@ -1085,7 +1086,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR true
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
 // @section extruder
@@ -1289,7 +1290,7 @@
 
     // Beyond the probed grid, continue the implied tilt?
     // Default is to maintain the height of the nearest edge.
-    //#define EXTRAPOLATE_BEYOND_GRID
+    #define EXTRAPOLATE_BEYOND_GRID
 
     //
     // Experimental Subdivision of the grid by Catmull-Rom method.
