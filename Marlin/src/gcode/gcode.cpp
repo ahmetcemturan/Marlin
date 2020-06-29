@@ -509,11 +509,7 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
         case 125: M125(); break;                                  // M125: Store current position and move to filament change position
       #endif
 	  
-      #if ENABLED(PARK_HEAD_ON_PAUSE)
-        case 601: M601(); break;                                  // M601: Store current position and move to filament change position
-      #endif
-
-      #if ENABLED(BARICUDA)
+        #if ENABLED(BARICUDA)
         // PWM for HEATER_1_PIN
         #if HAS_HEATER_1
           case 126: M126(); break;                                // M126: valve open
