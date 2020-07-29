@@ -21,7 +21,7 @@
  */
 
 // R25 = 100 kOhm, beta25 = 4700 K, 4.7 kOhm pull-up, NTCS0603E3104FHT   Ahmet Cem TURAN aka ACTion68  Cheap Chinese Thermistor No Name
-const short temptable_8[][2] PROGMEM = {
+const temp_entry_t temptable_8[] PROGMEM = {
 {OV(15),315},
 {OV(19),310},
 {OV(22),305},
