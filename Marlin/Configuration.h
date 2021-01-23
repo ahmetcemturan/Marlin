@@ -2228,20 +2228,9 @@
  *   Resolution: TFT_WIDTH and TFT_HEIGHT
  *   Interface:  TFT_INTERFACE_FSMC or TFT_INTERFACE_SPI
  */
-#define TFT_GENERIC //ACT
-#if ENABLED(TFT_GENERIC)  //ACT from here
-  // :[ 'AUTO', 'ST7735', 'ST7789', 'ST7796', 'R61505', 'ILI9328', 'ILI9341', 'ILI9488' ]
-  #define TFT_DRIVER AUTO
+#define MKS_ROBIN_TFT35 //ACT
+//#define TFT_GENERIC 
 
-  // Interface. Enable one of the following options:
-  #define TFT_INTERFACE_FSMC
-  //#define TFT_INTERFACE_SPI
-
-  // TFT Resolution. Enable one of the following options:
-  //#define TFT_RES_320x240
-  //#define TFT_RES_480x272
-  #define TFT_RES_480x320
-#endif  //to here
 /**
  * TFT UI - User Interface Selection. Enable one of the following options:
  *
