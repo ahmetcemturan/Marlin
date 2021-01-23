@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 #pragma once
@@ -45,13 +45,13 @@
 /**
  * Here are some standard links for getting your machine calibrated:
  *
- * https://reprap.org/wiki/Calibration
- * https://youtu.be/wAL9d7FgInk
+ * http://reprap.org/wiki/Calibration
+ * http://youtu.be/wAL9d7FgInk
  * http://calculator.josefprusa.cz
- * https://reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide
- * https://www.thingiverse.com/thing:5573
+ * http://reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide
+ * http://www.thingiverse.com/thing:5573
  * https://sites.google.com/site/repraplogphase/calibration-of-your-reprap
- * https://www.thingiverse.com/thing:298812
+ * http://www.thingiverse.com/thing:298812
  */
 
 //===========================================================================
@@ -135,13 +135,13 @@
 #define CUSTOM_MACHINE_NAME "Hornet 3D"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
-// Choose your own or use a service like https://www.uuidgenerator.net/version4
+// Choose your own or use a service like http://www.uuidgenerator.net/version4
 //#define MACHINE_UUID "00000000-0000-0000-0000-000000000000"
 
 // @section extruder
 
 // This defines the number of extruders
-// :[0, 1, 2, 3, 4, 5, 6, 7, 8]
+// :[1, 2, 3, 4, 5, 6, 7, 8]
 #define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
@@ -473,7 +473,7 @@
 //===========================================================================
 //============================= PID Settings ================================
 //===========================================================================
-// PID Tuning Guide here: https://reprap.org/wiki/PID_Tuning
+// PID Tuning Guide here: http://reprap.org/wiki/PID_Tuning
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
@@ -820,7 +820,7 @@
  *
  * See:
  *   https://reprap.org/forum/read.php?1,739819
- *   https://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
+ *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
   #define JUNCTION_DEVIATION_MM 0.013 // (mm) Distance from real junction edge
@@ -1800,7 +1800,7 @@
 
 //
 // RepRapDiscount Smart Controller.
-// https://reprap.org/wiki/RepRapDiscount_Smart_Controller
+// http://reprap.org/wiki/RepRapDiscount_Smart_Controller
 //
 // Note: Usually sold with a white PCB.
 //
@@ -1824,13 +1824,13 @@
 
 //
 // PanelOne from T3P3 (via RAMPS 1.4 AUX2/AUX3)
-// https://reprap.org/wiki/PanelOne
+// http://reprap.org/wiki/PanelOne
 //
 //#define PANEL_ONE
 
 //
 // GADGETS3D G3D LCD/SD Controller
-// https://reprap.org/wiki/RAMPS_1.3/1.4_GADGETS3D_Shield_with_Panel
+// http://reprap.org/wiki/RAMPS_1.3/1.4_GADGETS3D_Shield_with_Panel
 //
 // Note: Usually sold with a blue PCB.
 //
@@ -1917,7 +1917,7 @@
 
 //
 // 2-wire Non-latching LCD SR from https://goo.gl/aJJ4sH
-// LCD configuration: https://reprap.org/wiki/SAV_3D_LCD
+// LCD configuration: http://reprap.org/wiki/SAV_3D_LCD
 //
 //#define SAV_3DLCD
 
@@ -1944,7 +1944,7 @@
 
 //
 // RepRapDiscount FULL GRAPHIC Smart Controller
-// https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
+// http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
 //#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
@@ -1957,20 +1957,20 @@
 //
 // Activate one of these if you have a Panucatt Devices
 // Viki 2.0 or mini Viki with Graphic LCD
-// https://www.panucatt.com
+// http://panucatt.com
 //
 //#define VIKI2
 //#define miniVIKI
 
 //
 // MakerLab Mini Panel with graphic
-// controller and SD support - https://reprap.org/wiki/Mini_panel
+// controller and SD support - http://reprap.org/wiki/Mini_panel
 //
 //#define MINIPANEL
 
 //
 // MaKr3d Makr-Panel with graphic controller and SD support.
-// https://reprap.org/wiki/MaKr3d_MaKrPanel
+// http://reprap.org/wiki/MaKr3d_MaKrPanel
 //
 //#define MAKRPANEL
 
@@ -2056,7 +2056,7 @@
 
 //
 // Silvergate GLCD controller
-// https://github.com/android444/Silvergate
+// http://github.com/android444/Silvergate
 //
 //#define SILVER_GATE_GLCD_CONTROLLER
 
@@ -2085,7 +2085,7 @@
 
 //
 // MKS OLED 1.3" 128 × 64 FULL GRAPHICS CONTROLLER
-// https://reprap.org/wiki/MKS_12864OLED
+// http://reprap.org/wiki/MKS_12864OLED
 //
 // Tiny, but very sharp OLED display
 //
@@ -2147,29 +2147,25 @@
 
 //
 // FSMC display (MKS Robin, Alfawise U20, JGAurora A5S, REXYZ A1, etc.)
-// Upscaled 128x64 Marlin UI
 //
 //#define FSMC_GRAPHICAL_TFT
 
 //
 // TFT LVGL UI
 //
-// Using default MKS icons and fonts from: https://git.io/JJvzK
-// Just copy the 'assets' folder from the build directory to the
-// root of your SD card, together with the compiled firmware.
+// Default MKS icons and fonts: https://git.io/JJvzK
+// Copy mks_pic and mks_font folders to the root of your SD
 //
-//#define TFT_LVGL_UI_FSMC  // Robin nano v1.2 uses FSMC
-//#define TFT_LVGL_UI_SPI   // Robin nano v2.0 uses SPI
-
-//
-// Anycubic Mega TFT (AI3M)
-//
-//#define ANYCUBIC_TFT_MODEL
-//#define ANYCUBIC_TFT_DEBUG
+//#define TFT_LVGL_UI
 
 //=============================================================================
 //============================  Other Controllers  ============================
 //=============================================================================
+
+//
+// Robin nano v2.0 SPI touch screen
+//
+//#define SPI_GRAPHICAL_TFT
 
 //
 // Ender-3 v2 OEM display. A DWIN display with Rotary Encoder.
@@ -2192,7 +2188,7 @@
 
 //
 // RepRapWorld REPRAPWORLD_KEYPAD v1.1
-// https://reprapworld.com/?products_details&products_id=202&cPath=1591_1626
+// http://reprapworld.com/?products_details&products_id=202&cPath=1591_1626
 //
 //#define REPRAPWORLD_KEYPAD
 //#define REPRAPWORLD_KEYPAD_MOVE_STEP 10.0 // (mm) Distance to move per key-press
