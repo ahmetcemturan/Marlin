@@ -2200,9 +2200,9 @@
 
 //
 // Third-party or vendor-customized controller interfaces.
-// Sources should be installed in 'src/lcd/extensible_ui'.
+// Sources should be installed in 'src/lcd/extui'.
 //
-//#define EXTENSIBLE_UI
+//#define EXTENSIBLE_UI //ACT
 
 #if ENABLED(EXTENSIBLE_UI)
   //#define EXTUI_LOCAL_BEEPER // Enables use of local Beeper pin with external display
@@ -2229,7 +2229,19 @@
  *   Interface:  TFT_INTERFACE_FSMC or TFT_INTERFACE_SPI
  */
 #define TFT_GENERIC //ACT
+#if ENABLED(TFT_GENERIC)  //ACT from here
+  // :[ 'AUTO', 'ST7735', 'ST7789', 'ST7796', 'R61505', 'ILI9328', 'ILI9341', 'ILI9488' ]
+  #define TFT_DRIVER AUTO
 
+  // Interface. Enable one of the following options:
+  #define TFT_INTERFACE_FSMC
+  //#define TFT_INTERFACE_SPI
+
+  // TFT Resolution. Enable one of the following options:
+  //#define TFT_RES_320x240
+  //#define TFT_RES_480x272
+  #define TFT_RES_480x320
+#endif  //to here
 /**
  * TFT UI - User Interface Selection. Enable one of the following options:
  *
