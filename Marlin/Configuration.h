@@ -1299,8 +1299,8 @@
     // Experimental Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
     //
-    #define ABL_BILINEAR_SUBDIVISION
-    #if ENABLED(ABL_BILINEAR_SUBDIVISION)
+    //#define ABL_BILINEAR_SUBDIVISION  //ACT
+    #if ENABLED(ABL_BILINEAR_SUBDIVISION) 
       // Number of subdivisions between probe points
       #define BILINEAR_SUBDIVISIONS 3
     #endif
@@ -1402,7 +1402,7 @@
 
 // Homing speeds (mm/min)
 #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (8*60)
+#define HOMING_FEEDRATE_Z  (9*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
