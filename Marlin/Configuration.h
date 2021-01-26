@@ -1386,7 +1386,7 @@
     // Experimental Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
     //
-    //#define ABL_BILINEAR_SUBDIVISION  //ACT
+    #define ABL_BILINEAR_SUBDIVISION  //ACT
     #if ENABLED(ABL_BILINEAR_SUBDIVISION) 
       // Number of subdivisions between probe points
       #define BILINEAR_SUBDIVISIONS 3
@@ -1430,7 +1430,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING //disable for LVGL display
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
@@ -2345,7 +2345,7 @@
 // 480x320, 3.5", FSMC Display From MKS
 // Normally used in MKS Robin Nano V1.2
 //
-/
+
 #define MKS_ROBIN_TFT35
 
 //
@@ -2412,13 +2412,16 @@
  *   For LVGL_UI also copy the 'assets' folder from the build directory to the
  *   root of your SD card, together with the compiled firmware.
  */
-//#define TFT_CLASSIC_UI
+#define TFT_CLASSIC_UI
 //#define TFT_COLOR_UI
 //#define TFT_LVGL_UI
 
 #if ENABLED(TFT_LVGL_UI)
   //#define MKS_WIFI_MODULE  // MKS WiFi module
+  #define TFT_ROTATION TFT_NO_ROTATION
 #endif
+
+
 
 /**
  * TFT Rotation. Set to one of the following values:
@@ -2456,7 +2459,7 @@
   //#define TOUCH_ORIENTATION TOUCH_LANDSCAPE
 
   #if ENABLED(TFT_COLOR_UI)
-    //#define SINGLE_TOUCH_NAVIGATION
+    #define SINGLE_TOUCH_NAVIGATION
   #endif
 #endif
 
