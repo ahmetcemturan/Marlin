@@ -1950,7 +1950,11 @@
 //
 // Note: Usually sold with a white PCB.
 //
+<<<<<<< HEAD
 #define REPRAP_DISCOUNT_SMART_CONTROLLER
+=======
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER
+>>>>>>> parent of 6510bf8fb8 (Merge branch 'bugfix-2.0.x' of https://github.com/MarlinFirmware/Marlin into bugfix-2.0.x)
 
 //
 // Original RADDS LCD Display+Encoder+SDCardReader
