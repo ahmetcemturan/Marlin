@@ -287,7 +287,9 @@ void MMU2::mmu_loop() {
         else if (WITHIN(cmd, MMU_CMD_F0, MMU_CMD_F4)) {
           // filament type
           int filament = cmd - MMU_CMD_F0;
-          DEBUG_ECHOLNPAIR("MMU <= F", filament, " ", cmd_arg);
+          DEBUG_ECHOPAIR("MMU <= F", filament, " ");
+          DEBUG_ECHO_F(cmd_arg, DEC);
+          DEBUG_EOL();
           tx_printf_P(PSTR("F%d %d\n"), filament, cmd_arg);
           state = 3; // wait for response
         }
@@ -512,7 +514,7 @@ static void mmu2_not_responding() {
         extruder = index; // filament change is finished
         active_extruder = 0;
         ENABLE_AXIS_E0();
-        SERIAL_ECHO_MSG(STR_ACTIVE_EXTRUDER, extruder);
+        SERIAL_ECHO_MSG(STR_ACTIVE_EXTRUDER, int(extruder));
       }
       ui.reset_status();
     }
@@ -599,7 +601,7 @@ static void mmu2_not_responding() {
       active_extruder = 0;
 
       ENABLE_AXIS_E0();
-      SERIAL_ECHO_MSG(STR_ACTIVE_EXTRUDER, extruder);
+      SERIAL_ECHO_MSG(STR_ACTIVE_EXTRUDER, int(extruder));
 
       ui.reset_status();
     }
@@ -694,7 +696,7 @@ static void mmu2_not_responding() {
       extruder = index; //filament change is finished
       active_extruder = 0;
       ENABLE_AXIS_E0();
-      SERIAL_ECHO_MSG(STR_ACTIVE_EXTRUDER, extruder);
+      SERIAL_ECHO_MSG(STR_ACTIVE_EXTRUDER, int(extruder));
       ui.reset_status();
     }
 
