@@ -1955,6 +1955,9 @@
 =======
 //#define REPRAP_DISCOUNT_SMART_CONTROLLER
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6510bf8fb8 (Merge branch 'bugfix-2.0.x' of https://github.com/MarlinFirmware/Marlin into bugfix-2.0.x)
+=======
 >>>>>>> parent of 6510bf8fb8 (Merge branch 'bugfix-2.0.x' of https://github.com/MarlinFirmware/Marlin into bugfix-2.0.x)
 =======
 >>>>>>> parent of 6510bf8fb8 (Merge branch 'bugfix-2.0.x' of https://github.com/MarlinFirmware/Marlin into bugfix-2.0.x)
