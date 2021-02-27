@@ -59,6 +59,9 @@ typedef struct { int16_t value, celsius; } temp_entry_t;
 #if ANY_THERMISTOR_IS(1) // beta25 = 4092 K, R25 = 100 kOhm, Pull-up = 4.7 kOhm, "EPCOS"
   #include "thermistor_1.h"
 #endif
+#if ANY_THERMISTOR_IS(1888) // R25 = 100 kOhm, Pull-up = 4.7 kOhm, "AliExpress ROC"
+  #include "thermistor_1888.h"
+#endif
 #if ANY_THERMISTOR_IS(2) // 4338 K, R25 = 200 kOhm, Pull-up = 4.7 kOhm, "ATC Semitec 204GT-2"
   #include "thermistor_2.h"
 #endif
