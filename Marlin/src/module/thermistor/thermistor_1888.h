@@ -22,7 +22,7 @@
 #pragma once
 
 // R25 = 100 kOhm, 4.7 kOhm pull-up, Ahmet Cem TURAN aka ACTion68  cheap chinese AliExpress glass thermistor NoName
-const temp_entry_t temptable_8[] PROGMEM = {
+const temp_entry_t temptable_1888[] PROGMEM = {
 {OV(15),315},
 {OV(19),310},
 {OV(22),305},
