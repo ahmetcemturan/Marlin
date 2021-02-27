@@ -1587,7 +1587,7 @@ void wifi_rcv_handle() {
       if (wifiTransError.flag != 0x1) WIFI_IO1_RESET();
       getDataF = 1;
     }
-    if (need_ok_later &&  (queue.length < BUFSIZE)) {
+    if (need_ok_later && !queue.ring_buffer.full()) {
       need_ok_later = false;
       send_to_wifi((uint8_t *)"ok\r\n", strlen("ok\r\n"));
     }
@@ -1746,7 +1746,7 @@ void get_wifi_commands() {
   static int wifi_read_count = 0;
 
   if (espGcodeFifo.wait_tick > 5) {
-    while ((queue.length < BUFSIZE) && (espGcodeFifo.r != espGcodeFifo.w)) {
+    while (!queue.ring_buffer.full() && (espGcodeFifo.r != espGcodeFifo.w)) {
 
       espGcodeFifo.wait_tick = 0;
 

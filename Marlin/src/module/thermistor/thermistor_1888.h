@@ -19,8 +19,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
-//ACT cheap chinese glass thermistor
-// R25 = 100 kOhm, beta25 = 4700 K, 4.7 kOhm pull-up, NTCS0603E3104FHT   Ahmet Cem TURAN aka ACTion68  Cheap Chinese Thermistor No Name
+#pragma once
+
+// R25 = 100 kOhm, 4.7 kOhm pull-up, Ahmet Cem TURAN aka ACTion68  cheap chinese AliExpress glass thermistor NoName
 const temp_entry_t temptable_8[] PROGMEM = {
 {OV(15),315},
 {OV(19),310},
